@@ -1,0 +1,200 @@
+!--- STRUCTURE INFORMATION ---!
+
+Dimension
+ 3
+
+UnitcellVector
+1.0
+1.0 0.0 0.0
+0.0 1.0 0.0
+0.0 0.0 1.0
+
+OrbitalN
+ 1
+
+OrbitalPosition
+ 0.0 0.0 0.0
+
+
+!---------- MODEL PARAMETER ----------!
+!   OnsiteE only diagonal term exist  !
+! order : 1st orb up, 2nd orb up, ...,!
+! ...     1st orb dn, 2nd orb dn, ... !
+
+OnsiteE
+0.0 0.0
+0.0 0.0
+
+
+
+
+
+NNHopping
+0.25 0.0
+0.0 0.25
+
+
+
+
+
+2NNHopping
+0.0 0.0
+0.0 0.0
+
+
+
+
+
+3NNHopping
+0.0 0.0
+0.0 0.0
+
+
+
+
+
+OnsiteU
+3.0 3.0
+3.0 3.0
+
+ 
+
+
+
+
+NNU
+0.5 0.5
+0.5 0.5
+
+
+
+
+
+2NNU
+0.0 0.0
+0.0 0.0
+
+
+
+
+
+3NNU
+0.0 0.0
+0.0 0.0
+
+
+
+
+
+
+!------------ GRID ------------!
+! Tau, iWn, kx,ky,kz, Rx,Ry,Rz !
+
+Grid
+  2000
+  15.0
+  10
+  10
+  10
+  10
+  10
+  10
+
+
+
+!--- LOOP # ---!
+
+MaxLoopNum
+ 30
+
+
+
+!--- TEMPERATURE ---!
+
+Temperature
+ 300.0
+
+
+
+
+!--- OCCUPATION ---!
+
+Occupation
+ 1.0
+
+
+
+!--- CRITERION ---!
+
+ThresholdChemP
+ 0.000000001
+
+ThresholdGreenf
+ 0.0001
+
+
+
+!--- OUTPUT FILE ---!
+GreenfOutAllk
+ 0
+
+LocalSelfEOut
+ 1
+
+LogOutOn
+ 0
+
+
+
+!---------- MIXING ----------!
+! Polarization , self energy !
+
+GWMixing
+ 1.0
+ 1.0
+
+DMFTMixing
+ 1.0
+ 1.0
+
+
+!--- COMBINING OTHER METHODS ---!
+! CTQMC=1 :DMFT, CTQMC=2: EDMFT ! 
+!      GW_CTQMC=1 :GW+EDMFT     ! 
+!  HartreeFock=1 : Hartree fock !
+! all=0 : self-consistent GW    !
+
+HartreeFock
+ 0 
+ 
+CTQMC
+ 0
+
+GW_CTQMC
+ 0
+
+
+!--- RESTART OPTION Mu SHIFT ---!
+MuShiftInDMFT_1stloop
+ 0.0
+
+
+!--- Spin Sym Breaking ---!
+! + + ... + + : ferro     !
+! + - ... + - : antiferro !
+! 0 0 ... 0 0 : para      !
+SpinSymBreaking
+ 0.0
+
+
+!--- ETC. ---!
+delta
+ 0.0
+
+EnergyRange
+ 15.0
+
+GridNumCheck
+ 0
+ 0
+ 0
