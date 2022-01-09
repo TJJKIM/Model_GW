@@ -1,5 +1,8 @@
 # Model_GW
-Low energy band model calculation with GW approximation
+Low energy band model calculation with GW approximation.
+
+# Prerequisite
+Fortran compiler and blas/lapack library (i.e. ifort, and mkl).
 
 # Installation
 To compile this program
